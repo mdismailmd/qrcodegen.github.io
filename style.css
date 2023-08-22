@@ -1,0 +1,230 @@
+*{
+	margin: 0;
+	padding: 0;
+	
+	box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto:wght@300&display=swap');
+
+body{
+	font-family: 'Roboto', sans-serif;
+	 background: linear-gradient(to top, rgba(0, 0, 0, 0.5)25%, rgba(0, 0, 0, 0.5)25%), url('images/back2.jpg');
+	 background-position: center;
+	 background-size: cover;
+
+}
+.header h2{
+	width: 100%;
+	margin-top:1.5rem ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-decoration: underline;
+ font-weight: bolder;
+  background: transparent;
+
+  
+  font-size: 2.5rem;
+  font-weight: 500;
+  animation: lights 5s 750ms linear infinite;
+
+}
+@keyframes lights {
+  0% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+  30% { 
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  40% { 
+    color: hsl(230, 100%, 95%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 90%, 0.5),
+      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  70% {
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  100% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+}
+
+
+
+
+
+/* .animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 50px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+} */
+
+.main{
+		width: 80%;
+	height: 70%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 2rem;
+	margin-top: 4rem;
+	background: transparent;
+	border: 1px solid #fff ;
+	border-radius: 10px ;
+
+}
+
+.main p{
+	font-weight: 700;
+	font-size: 20px;
+	margin-bottom: 8px;
+	color: #fff;
+}
+
+.main input{
+	width: 100%;
+	height: 50px;
+	border: 1px solid #494eea;
+	outline: 0;
+	padding: 10px;
+	margin: 10px 0 20px;
+	border-radius: 5px;
+	background: #fff;
+}
+.main button{
+  width: 100%;
+  height: 50px;
+  background: #494eea;
+  color: #fff;
+  outline: 0;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin: 20px 0;
+  font-weight: 500;
+}
+
+#imgbox{
+	width: 200px;
+	border-radius: 5px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 1s;
+}
+
+#imgbox img{
+	width: 100%;
+	padding: 10px;
+
+}
+
+#imgbox.show-img{
+	max-height: 300px;
+	margin: 10px auto;
+	border: 1px solid #d1d1d1;
+}
+
+.error{
+	animation: shake 0.1s linear 10;
+
+}
+@keyframes shake {
+	0%{
+		transform: translateX(0);
+	}
+	25%{
+		transform: translate(-2px);
+	}
+	50%{
+		transform: translateX(0);
+	}
+	75%{
+		transform: translate(2px);
+	}
+	100%{
+		transform: translate(0);
+	}
+}
+
+.text-center{
+		width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 5rem;
+ 
+  background: transparent;
+  color: #fff;
+
+}
+.text-center a{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+.link a{
+			text-decoration: none;
+			color:#fff ;
+			font-weight: 2rem;
+		}
+.fa{
+		margin: 1rem;
+			
+		}
+
+
